@@ -1,10 +1,9 @@
 
-
 CREATE COMPUTE MODULE SFTPSampleMsgFlow_Compute
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
-		 CALL CopyMessageHeaders();
-		 CALL CopyEntireMessage();
+		CALL CopyMessageHeaders();
+		CALL CopyEntireMessage();
 		RETURN TRUE;
 	END;
 
